@@ -5,6 +5,8 @@ import { useEffect, useState } from 'react'
 import { FiSearch } from 'react-icons/fi'
 import { AiFillPlusCircle } from 'react-icons/ai'
 import { collection, getDocs, onSnapshot } from 'firebase/firestore'
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
  
 import { db } from './config/firebase'
@@ -79,6 +81,7 @@ const {isOpen , onClose , onOpen} = useDisclose()
     </div>
 
     <AddAndUpdateContact  onClose={onClose} isOpen={isOpen} />
+    <ToastContainer position="bottom-center"/>
 
     
     </>

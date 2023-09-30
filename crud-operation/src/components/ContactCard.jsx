@@ -6,6 +6,7 @@ import {MdDelete} from 'react-icons/md'
 import { db } from '../config/firebase'
 import AddAndUpdateContact from './AddAndUpdateContact'
 import useDisclose from '../Hooks/useDisclose'
+import { toast } from 'react-toastify'
 
 const ContactCard = ({contact}) => {
 
@@ -14,6 +15,7 @@ const ContactCard = ({contact}) => {
             try {
                 const contactRef = doc(collection(db, 'contacts'), id); 
                 await deleteDoc(contactRef);
+                toast.success("Contact Deleted Succesfully")
                 console.log("deleted", id)
             } catch (error) {
                 console.log(error)

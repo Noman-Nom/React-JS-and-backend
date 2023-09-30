@@ -22,6 +22,38 @@ function App() {
 const {isOpen , onClose , onOpen} = useDisclose()
 
 
+        const filterContacts = (e)=>{
+          const value = e.target.value;
+
+          const contactsRef = collection(db, "contacts")
+        
+
+          onSnapshot(contactsRef,(snapshot)=>{
+            const contactLists = snapshot.docs.map((doc) => {
+              return {
+                id: doc.id,
+                ...doc.data()
+              }
+    
+    
+            });
+
+
+
+                const filterdContacts = contactLists.filter((contact)=>
+                contact.name.toLowerCase().includes(value.toLowerCase()))
+            // console.log(contactLists)
+            setContacts(filterdContacts )
+            return filterdContacts 
+    
+  
+          })
+
+          
+          
+
+        }
+
   useEffect(() => {
 
     const getContacts = async () => {
@@ -54,6 +86,8 @@ const {isOpen , onClose , onOpen} = useDisclose()
   }, [])
 
 
+
+
   return (
     <>
     
@@ -64,7 +98,7 @@ const {isOpen , onClose , onOpen} = useDisclose()
       <div className="flex gap-2">
         <div className="flex flex-grow items-center relative  ">
           <FiSearch className='ml-1 absolute text-3xl text-white p-1' />
-          <input type="text"
+          <input onChange={filterContacts} type="text"
             className='h-10 flex-grow rounded-md border border-white
       bg-transparent outline-none pl-10 text-white text-[19px]'
             name="" id="" />

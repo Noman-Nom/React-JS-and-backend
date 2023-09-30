@@ -1,7 +1,7 @@
 import React from 'react'
 import Model from './Model'
 import { Field, Form, Formik } from 'formik'
-import {addDoc, collection} from 'firebase/firestore'
+import {addDoc, collection, doc, updateDoc} from 'firebase/firestore'
 import {db} from '../config/firebase'
 
 const AddAndUpdateContact = ({ isOpen, onClose , isUpdate, contact }) => {
@@ -17,6 +17,18 @@ const AddAndUpdateContact = ({ isOpen, onClose , isUpdate, contact }) => {
             console.log(error)
         }
     }
+
+    const updateContact = async (contact,id)=>{
+
+        try {
+            const contactRef = doc(db,"contacts",id)
+            await updateDoc(contactRef,contact)
+            
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
     return (
         <div>
             <Model
@@ -36,6 +48,7 @@ const AddAndUpdateContact = ({ isOpen, onClose , isUpdate, contact }) => {
                         }}
                         onSubmit={(values)=>{
                             console.log(values)
+                            isUpdate? updateContact (values,contact.id):
                             addContact(values)
                         }}
                 >

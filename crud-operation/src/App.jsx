@@ -11,20 +11,13 @@ import { db } from './config/firebase'
 import ContactCard from './components/ContactCard'
 import Model from './components/Model'
 import AddAndUpdateContact from './components/AddAndUpdateContact'
+import useDisclose from './Hooks/useDisclose'
 
 function App() {
 
   const [contacts, setContacts] = useState([])
 
-  const [isOpen, setIsOpen] = useState(false);
-
-  const onOpen = ()=>{
-      setIsOpen(true)
-  }
-
-  const onClose = ()=>{
-    setIsOpen(false)
-  }
+const {isOpen , onClose , onOpen} = useDisclose()
 
 
   useEffect(() => {

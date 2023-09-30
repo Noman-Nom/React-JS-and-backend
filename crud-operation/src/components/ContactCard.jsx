@@ -1,9 +1,25 @@
+import { collection, deleteDoc,doc } from 'firebase/firestore'
 import React from 'react'
 import { BiUserCircle } from 'react-icons/bi'
 import {BiEdit} from 'react-icons/bi'
 import {MdDelete} from 'react-icons/md'
+import { db } from '../config/firebase'
+import AddAndUpdateContact from './AddAndUpdateContact'
+import useDisclose from '../Hooks/useDisclose'
 
 const ContactCard = ({contact}) => {
+
+    const {isOpen , onClose , onOpen} = useDisclose()
+    const deleteContact = async (id)=>{
+            try {
+                const contactRef = doc(collection(db, 'contacts'), id); 
+                await deleteDoc(contactRef);
+                console.log("deleted", id)
+            } catch (error) {
+                console.log(error)
+            }
+    }
+
     return (
         <div>
             <div key={contact.id}
@@ -16,14 +32,16 @@ const ContactCard = ({contact}) => {
                 </div>
             </div>
             <div className='flex text-3xl cursor-pointer'>
-                <BiEdit className='cursor-pointer' />
-                <MdDelete className='text-orange cursor-pointer' />
+                <BiEdit onClick={onOpen} className='cursor-pointer' />
+                <MdDelete onClick={()=>deleteContact(contact.id)} className='text-orange cursor-pointer' />
 
 
             </div>
 
 
-        </div></div>
+        </div>
+        <AddAndUpdateContact  isUpdate isOpen={isOpen} onClose={onClose}  />
+        </div>
     )
 }
 

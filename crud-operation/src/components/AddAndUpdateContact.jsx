@@ -4,7 +4,8 @@ import { Field, Form, Formik } from 'formik'
 import {addDoc, collection} from 'firebase/firestore'
 import {db} from '../config/firebase'
 
-const AddAndUpdateContact = ({ isOpen, onClose }) => {
+const AddAndUpdateContact = ({ isOpen, onClose , isUpdate }) => {
+
 
     const addContact = async (contact)=>{
 
@@ -41,7 +42,7 @@ const AddAndUpdateContact = ({ isOpen, onClose }) => {
                         <label htmlFor="email">Email</label>
                         <Field className="h-10 border bg-transparent"  name = "email"/>
                         </div>
-                        <button className=' border bg-orange py-2 px-3 my-2 text-[15px'>Add Contact</button>
+                        <button  className=' border bg-orange py-2 px-3 my-2 text-[15px'>{isUpdate ? "Update": "Add"} Contact</button>
                     </Form>
                 </Formik>
 

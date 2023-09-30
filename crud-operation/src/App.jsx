@@ -10,6 +10,7 @@ import { collection, getDocs } from 'firebase/firestore'
 import { db } from './config/firebase'
 import ContactCard from './components/ContactCard'
 import Model from './components/Model'
+import AddAndUpdateContact from './components/AddAndUpdateContact'
 
 function App() {
 
@@ -78,10 +79,9 @@ function App() {
         }</div>
     </div>
 
-    <Model
-        isOpen={isOpen}
-        onClose={onClose}
-    >Hi</Model>
+    <AddAndUpdateContact  onClose={onClose} isOpen={isOpen} />
+
+    
     </>
   )
 }

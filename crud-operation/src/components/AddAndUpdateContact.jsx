@@ -4,7 +4,7 @@ import { Field, Form, Formik } from 'formik'
 import {addDoc, collection} from 'firebase/firestore'
 import {db} from '../config/firebase'
 
-const AddAndUpdateContact = ({ isOpen, onClose , isUpdate }) => {
+const AddAndUpdateContact = ({ isOpen, onClose , isUpdate, contact }) => {
 
 
     const addContact = async (contact)=>{
@@ -24,7 +24,13 @@ const AddAndUpdateContact = ({ isOpen, onClose , isUpdate }) => {
                 onClose={onClose}>
 
                 <Formik 
-                        initialValues={{
+                        initialValues={
+                          isUpdate? {
+                            name: contact.name,
+                            email: contact.email
+                          }:
+                            {
+
                             name: "",
                             email: "",
                         }}

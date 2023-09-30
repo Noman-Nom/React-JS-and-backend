@@ -14,6 +14,7 @@ import ContactCard from './components/ContactCard'
 import Model from './components/Model'
 import AddAndUpdateContact from './components/AddAndUpdateContact'
 import useDisclose from './Hooks/useDisclose'
+import NotFound from './components/NotFound'
 
 function App() {
 
@@ -108,7 +109,7 @@ const {isOpen , onClose , onOpen} = useDisclose()
 
       <div className='mt-4 flex flex-col gap-2'>
         {
-          contacts.map((contact) => (
+         contacts.length<= 0 ? <NotFound/> : contacts.map((contact) => (
             <ContactCard key={contact.id} contact={contact}/>
           ))
         }</div>

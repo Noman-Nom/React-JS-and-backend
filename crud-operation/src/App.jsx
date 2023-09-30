@@ -9,12 +9,21 @@ import { collection, getDocs } from 'firebase/firestore'
  
 import { db } from './config/firebase'
 import ContactCard from './components/ContactCard'
+import Model from './components/Model'
 
 function App() {
 
   const [contacts, setContacts] = useState([])
 
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const onOpen = ()=>{
+      setIsOpen(true)
+  }
+
+  const onClose = ()=>{
+    setIsOpen(false)
+  }
 
 
   useEffect(() => {
@@ -44,6 +53,8 @@ function App() {
 
 
   return (
+    <>
+    
     <div className='mx-auto max-w-[370px] px-4'>
       <Navbar />
 
@@ -56,7 +67,7 @@ function App() {
       bg-transparent outline-none pl-10 text-white text-[19px]'
             name="" id="" />
         </div>
-        <AiFillPlusCircle className='text-5xl text-white cursor-pointer ' />
+        <AiFillPlusCircle onClick={onOpen} className='text-5xl text-white cursor-pointer ' />
       </div>
 
       <div className='mt-4 flex flex-col gap-2'>
@@ -66,6 +77,12 @@ function App() {
           ))
         }</div>
     </div>
+
+    <Model
+        isOpen={isOpen}
+        onClose={onClose}
+    >Hi</Model>
+    </>
   )
 }
 

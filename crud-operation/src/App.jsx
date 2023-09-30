@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 import { useEffect, useState } from 'react'
 import { FiSearch } from 'react-icons/fi'
 import { AiFillPlusCircle } from 'react-icons/ai'
-import { collection, getDocs } from 'firebase/firestore'
+import { collection, getDocs, onSnapshot } from 'firebase/firestore'
 
  
 import { db } from './config/firebase'
@@ -25,18 +25,24 @@ const {isOpen , onClose , onOpen} = useDisclose()
     const getContacts = async () => {
       try {
         const contactsRef = collection(db, "contacts")
-        const contactsSnapshot = await getDocs(contactsRef)
-        const contactLists = contactsSnapshot.docs.map((doc) => {
-          return {
-            id: doc.id,
-            ...doc.data()
-          }
+        
 
+        onSnapshot(contactsRef,(snapshot)=>{
+          const contactLists = snapshot.docs.map((doc) => {
+            return {
+              id: doc.id,
+              ...doc.data()
+            }
+  
+  
+          })
+          // console.log(contactLists)
+          setContacts(contactLists)
+          return contactLists
+  
 
         })
-        // console.log(contactLists)
-        setContacts(contactLists)
-
+        
       } catch (error) {
         console.log(error)
       }

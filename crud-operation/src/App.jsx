@@ -14,6 +14,8 @@ function App() {
 
   const [contacts, setContacts] = useState([])
 
+  const [open, setOpen] = useState(false);
+
 
   useEffect(() => {
 

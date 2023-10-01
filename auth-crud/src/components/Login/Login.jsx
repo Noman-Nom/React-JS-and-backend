@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import './Login.css'
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../../Config/Firebase';
 
 const Login = () => {
@@ -10,10 +10,12 @@ const Login = () => {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
 
+  const navigate = useNavigate()
+
   const handleLogin = (e) => {
     e.preventDefault()
 
-    createUserWithEmailAndPassword(auth, email, password)
+    signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed up 
         const user = userCredential.user;
@@ -21,7 +23,7 @@ const Login = () => {
       })
       .catch((error) => {
     setError(true)
-        // ..
+        console.log(error)
       });
 
   }

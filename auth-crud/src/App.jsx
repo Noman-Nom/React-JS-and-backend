@@ -9,12 +9,15 @@ import {
 } from 'react-router-dom';
 
 function App() {
-  
+  const currentUser = false;
+const RequireAuth = ({ children }) => {
+  return currentUser ? children : <Navigate to="/login" />;
+};
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout/>} />
+        <Route path="/" element={<RequireAuth><Layout/></RequireAuth>} />
         <Route path="/login" element={<Login />} />
       </Routes>
     </Router>

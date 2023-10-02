@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useContext } from 'react'
 import Login from './components/Login/Login'
 import Layout from './Layout.jsx'
 import {
@@ -7,18 +7,40 @@ import {
   BrowserRouter as Router,
   Routes,
 } from 'react-router-dom';
+import { AuthContext } from './Context/AuthContext';
+
 
 function App() {
-  const currentUser = false;
+
+  const {currentUser} = useContext(AuthContext)
+
+  
 const RequireAuth = ({ children }) => {
   return currentUser ? children : <Navigate to="/login" />;
 };
 
+console.log(currentUser)
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<RequireAuth><Layout/></RequireAuth>} />
-        <Route path="/login" element={<Login />} />
+        <Route path='/'>
+        <Route path="login" element={<Login />} />
+        <Route
+              index
+              element={
+                <RequireAuth>
+                  <Layout />
+                </RequireAuth>
+              }
+            />
+
+
+        </Route>
+        
+        {/* <Route path="/" element={<RequireAuth><Layout/></RequireAuth>} /> */}
+
+        
+        {/* <Route path="/login" element={<Login />} /> */}
       </Routes>
     </Router>
   );

@@ -8,6 +8,7 @@ import {
   Routes,
 } from 'react-router-dom';
 import { AuthContext } from './Context/AuthContext';
+import NewData from './components/NewData/NewData';
 
 
 function App() {
@@ -25,6 +26,7 @@ console.log(currentUser)
       <Routes>
         <Route path='/'>
         <Route path="login" element={<Login />} />
+        <Route path="new" element={<NewData/>} />
         <Route
               index
               element={

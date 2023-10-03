@@ -6,9 +6,12 @@ const Sidebar = () => {
         <div className='sidebar'>
 
             <div className='top'>
-                <span className="logo">
+                <div className="logo">
                     <img src="/logo1.png" alt="" />
-                </span>
+
+                </div>
+                
+                
 
             </div>
             <div className='center'>

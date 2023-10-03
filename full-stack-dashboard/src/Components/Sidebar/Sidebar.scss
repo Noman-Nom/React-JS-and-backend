@@ -1,5 +1,8 @@
 .sidebar{
     flex: 1;
+    border-right: .5px solid rgb(235, 233, 233);
+    min-height: 100vh;
+    background-color: white;
     // background-color: aqua;
     .top{
         display: flex;
@@ -9,6 +12,7 @@
         // background-color: aqua;
        .logo{
             width: 140px;
+            cursor: pointer;
 
         img{
             width: 100%;
@@ -16,6 +20,10 @@
         }
        }
         
+    }
+    hr{
+        height: 0;
+        border: .5px solid rgb(235, 233, 233);
     }
     
 }

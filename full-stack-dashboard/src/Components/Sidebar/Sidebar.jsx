@@ -9,11 +9,9 @@ const Sidebar = () => {
                 <div className="logo">
                     <img src="/logo1.png" alt="" />
 
-                </div>
-                
-                
-
+                </div>  
             </div>
+            <hr/>
             <div className='center'>
                 <ul>
                     <li><span>Dashboard</span></li>

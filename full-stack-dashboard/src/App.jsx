@@ -1,9 +1,33 @@
 import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './Pages/Home/Home'
+import Login from './Pages/Login/Login'
+import List from './Pages/List/List'
+import New from './Pages/New/New'
+import Single from './Pages/Single/Single'
 
 const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/'>
+            <Route index element={<Home />} />
+            <Route path='login' element={<Login />} />
+            <Route path='user'>
+              <Route index element={<List />} />
+              <Route path='new' element={<New />} />
+              <Route path=':userId' element={<Single />} />
+            </Route>
+            <Route path='courses'>
+              <Route index element={<List />} />
+              <Route path='new' element={<New />} />
+              <Route path=':courseId' element={<Single />} />
+            </Route>
+
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }

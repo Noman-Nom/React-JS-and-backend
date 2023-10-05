@@ -31,9 +31,11 @@ const Navbar = () => {
           </div>
           <div className="item">
                 <CircleNotificationsIcon className='icon' />
+                {/* <div className="counter">1</div> */}
           </div>
           <div className="item">
                <ChatBubbleIcon className='icon' />
+                {/* <div className="counter">1</div> */}
           </div>
           <div className="item">
                <FormatListBulletedIcon className='icon' />

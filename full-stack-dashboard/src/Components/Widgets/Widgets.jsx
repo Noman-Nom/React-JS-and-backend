@@ -15,12 +15,12 @@ const Widgets = () => {
                 <span className="counter">
                     57971
                 </span>
-                <span className="Link">
+                <span className="link">
                     See All Students
                 </span>
         </div>
         <div className="right">
-            <div className="percentage">
+            <div className="percentage positive">
          <ArrowUpwardIcon/>
                     20%
             </div>

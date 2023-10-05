@@ -4,11 +4,14 @@ import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import PersonIcon from '@mui/icons-material/Person';
+import AppRegistrationIcon from '@mui/icons-material/AppRegistration';
 
 
 
 const Widgets = ({type}) => {
  let data;
+let amount = 2434;
+const diff = 20
 
  switch(type){
     case "students":
@@ -40,7 +43,7 @@ const Widgets = ({type}) => {
             title :"REGISTRATIONS",
           
             link: "See All Registrations",
-            icon: <PersonIcon className='icon'/>
+            icon: <AppRegistrationIcon className='icon'/>
         };
         break;
         default:
@@ -52,21 +55,22 @@ const Widgets = ({type}) => {
     <div className='widget'>
         <div className="left">
                 <span className="title">
-                    STUDENTS
+                    {data.title}
                 </span>
                 <span className="counter">
-                    57971
+                  {amount}
                 </span>
                 <span className="link">
-                    See All Students
+                {data.link}
                 </span>
         </div>
         <div className="right">
             <div className="percentage positive">
          <ArrowUpwardIcon/>
-                    20%
+                    
+                    {diff}%
             </div>
-                <AccountBoxIcon className='icon'/>
+                {data.icon}
         </div>
     </div>
   )

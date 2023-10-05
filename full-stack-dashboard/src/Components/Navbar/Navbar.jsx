@@ -20,22 +20,23 @@ const Navbar = () => {
         </div>
         <div className="items">
           <div className="item">
-                <LanguageIcon />
+                <LanguageIcon  className='icon'  />
+                English
           </div>
           <div className="item">
-                <Brightness4Icon/>
+                <Brightness4Icon className='icon' />
           </div>
           <div className="item">
-                <FullscreenIcon/>
+                <FullscreenIcon className='icon' />
           </div>
           <div className="item">
-                <CircleNotificationsIcon/>
+                <CircleNotificationsIcon className='icon' />
           </div>
           <div className="item">
-               <ChatBubbleIcon/>
+               <ChatBubbleIcon className='icon' />
           </div>
           <div className="item">
-               <FormatListBulletedIcon/>
+               <FormatListBulletedIcon className='icon' />
           </div>
         </div>
       </div>

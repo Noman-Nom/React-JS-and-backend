@@ -17,6 +17,7 @@
             font-size:14px ;
             font-weight: bold;
             color: rgb(152, 147, 147);
+            cursor: pointer;
         }
         .counter{
             font-size: 26px;
@@ -26,6 +27,7 @@
             width: max-content;
             font-size: 12px;
             border-bottom: 1px solid grey;
+            cursor: pointer;
         }
         .percentage{
             display: flex;
@@ -48,6 +50,7 @@
             color: white;
             border-radius: 50px;
             align-self: flex-end;
+            cursor: pointer;
         }
     }
 }

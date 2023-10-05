@@ -1,12 +1,13 @@
 import React from 'react'
 import SavedSearchIcon from '@mui/icons-material/SavedSearch';
 import LanguageIcon from '@mui/icons-material/Language';
-import './Sidebar.scss'
+import './Navbar.scss'
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
+
 
 const Navbar = () => {
   return (

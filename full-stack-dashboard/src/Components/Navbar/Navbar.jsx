@@ -38,6 +38,9 @@ const Navbar = () => {
           <div className="item">
                <FormatListBulletedIcon className='icon' />
           </div>
+          <div className="item">
+              <img src="/avatar.jpg" alt="avatar" className='avatar'/>
+          </div>
         </div>
       </div>
     </div>

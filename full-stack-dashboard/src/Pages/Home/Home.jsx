@@ -15,6 +15,7 @@ const Home = () => {
             <Widgets/>
             <Widgets/>
             <Widgets/>
+            
           </div>
       </div>
     </div>

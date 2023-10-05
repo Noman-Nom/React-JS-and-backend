@@ -1,0 +1,16 @@
+.widget{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    
+    border-radius: 10px;
+    height: 100px;
+
+    .left , .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

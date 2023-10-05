@@ -2,10 +2,52 @@ import React from 'react'
 import './Widgets.scss'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import PersonIcon from '@mui/icons-material/Person';
 
 
 
-const Widgets = () => {
+const Widgets = ({type}) => {
+ let data;
+
+ switch(type){
+    case "students":
+        data= {
+            title :"STUDENTS",
+           
+            link: "See All  Students",
+            icon: <AccountBoxIcon className='icon'/>
+        };
+        break;
+    case "courses":
+        data= {
+            title :"COURSES",
+            
+            link: "See All  Courses",
+            icon: < MenuBookIcon className='icon' />
+        };
+        break;
+    case "teacher":
+        data= {
+            title :"TEACHERS",
+          
+            link: "See All  Teachers",
+            icon: <PersonIcon className='icon'/>
+        };
+        break;
+    case "registrations":
+        data= {
+            title :"REGISTRATIONS",
+          
+            link: "See All Registrations",
+            icon: <PersonIcon className='icon'/>
+        };
+        break;
+        default:
+            break;
+
+ }
+
   return (
     <div className='widget'>
         <div className="left">

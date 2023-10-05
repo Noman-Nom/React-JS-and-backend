@@ -24,7 +24,7 @@ const Widgets = () => {
          <ArrowUpwardIcon/>
                     20%
             </div>
-                <AccountBoxIcon/>
+                <AccountBoxIcon className='icon'/>
         </div>
     </div>
   )

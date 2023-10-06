@@ -1,6 +1,8 @@
 import React from 'react'
 import './Featured.scss'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 const Featured = () => {
   return (
@@ -11,6 +13,12 @@ const Featured = () => {
           <MoreVertIcon fontSize='small'/>
       </div>
       <div className="bottom">
+        <div className="featuredChart">
+          < CircularProgressbar className='icon' value={"79"} text='78%' strokeWidth={7} />
+
+        </div>
+        <p className="title">Total Assesments Enter Last Month</p>
+        <p className="amount">780</p>
 
       </div>
     </div>

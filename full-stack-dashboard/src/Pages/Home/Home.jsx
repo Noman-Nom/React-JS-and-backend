@@ -5,26 +5,33 @@ import Navbar from '../../Components/Navbar/Navbar'
 import Widgets from '../../Components/Widgets/Widgets'
 import Featured from '../../Components/Featured/Featured'
 import Chart from '../../Components/Chart/Chart'
+import HowToRegIcon from '@mui/icons-material/HowToReg';
 
 const Home = () => {
   return (
     <div className='home'>
-      <Sidebar/>
+      <Sidebar />
       <div className="homeContainer">
-        <Navbar/>
-          <div className="widgets">
-            <Widgets type="students" />
-            <Widgets type="courses" />
-            <Widgets type="teacher" />
-            <Widgets type="registrations" />
-            
+        <Navbar />
+        <div className="widgets">
+          <Widgets type="students" />
+          <Widgets type="courses" />
+          <Widgets type="teacher" />
+          <Widgets type="registrations" />
+
+        </div>
+
+        <div className="charts">
+          <Featured />
+          <Chart />
+        </div>
+        <div className="listContainer">
+          <div className="listTitle">
+            <HowToRegIcon className='icon' />
+           <h3> New Applicants For Registration</h3>
           </div>
 
-          <div className="charts">
-            <Featured/>
-            <Chart/>
-
-          </div>
+        </div>
       </div>
     </div>
   )

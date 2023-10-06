@@ -17,6 +17,10 @@ const Home = () => {
             <Widgets type="registrations" />
             
           </div>
+
+          <div className="charts">
+            
+          </div>
       </div>
     </div>
   )

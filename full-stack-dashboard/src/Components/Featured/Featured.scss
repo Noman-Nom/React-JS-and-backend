@@ -27,11 +27,17 @@
         .featuredChart {
             width: 120px;
             height: 120px;
+          
+           
         }
         .title{
             font-weight: 500;
             color: gray;
             font-size: 14px;
+        }
+        .amount{
+            font-size: 30px;
+             color: rgb(44, 44, 44);
         }
     }
 }

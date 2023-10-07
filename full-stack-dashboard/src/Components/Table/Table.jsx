@@ -14,7 +14,7 @@ const List = () => {
 const rows = [
   {
     id: 1,
-    seatNo:"cs-20303",
+    seatNo:"CS-20303",
     rollNo: "19B-013-CE",
     name:"Muhammad Noman",
     img: "/noman.jpg",
@@ -28,7 +28,7 @@ const rows = [
   },
   {
     id: 2,
-    seatNo:"cs-20303",
+    seatNo:"CS-20303",
     rollNo: "20B-038-CE",
     name:"Ayesha Usman",
     img: "/sample.jpg",
@@ -42,7 +42,7 @@ const rows = [
   },
   {
     id: 3,
-    seatNo:"cs-20303",
+    seatNo:"CS-20303",
     rollNo: "20B-029-CE",
     name:"Sheraz Ahmed",
     img: "/noman.jpg",
@@ -54,7 +54,7 @@ const rows = [
   },
   {
     id: 4,
-    seatNo:"cs-20303",
+    seatNo:"CS-20303",
     rollNo: "20B-003-CE",
     name:"Syed Moiz Ali",
     img: "/noman.jpg",
@@ -66,7 +66,7 @@ const rows = [
   },
   {
     id: 5,
-    seatNo:"cs-20303",
+    seatNo:"CS-20303",
     rollNo: "20B-035-CE",
     name:"Raza Muhammad",
     img: "/noman.jpg",
@@ -80,7 +80,7 @@ const rows = [
   },
   {
     id: 6,
-    seatNo:"cs-20303",
+    seatNo:"CS-20303",
     rollNo: "20B-018-CE",
     name:"Zainab",
     img: "/sample.jpg",
@@ -94,7 +94,7 @@ const rows = [
   },
   {
     id: 7,
-    seatNo:"cs-20303",
+    seatNo:"CS-20303",
     rollNo: "20B-025-CE",
     name:"Ibraheem",
     img: "/noman.jpg",
@@ -106,9 +106,21 @@ const rows = [
   },
   {
     id:8 ,
-    seatNo:"cs-20303",
+    seatNo:"CS-20303",
     rollNo: "20B-241-CE",
     name:"Ahmed Raza",
+    img: "/noman.jpg",
+    batch: "2020",
+    sumester: '7th',
+    field: 'El-CSE',
+    status: "pending"
+
+  },
+  {
+    id:8 ,
+    seatNo:"CS-20303",
+    rollNo: "20B-022-CE",
+    name:"Waqas Akhter",
     img: "/noman.jpg",
     batch: "2020",
     sumester: '7th',
@@ -125,6 +137,7 @@ const rows = [
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
+            <TableCell className='tableCell'>ID</TableCell>
             <TableCell className='tableCell'>Roll-No</TableCell>
             <TableCell className='tableCell'>Seat-No</TableCell>
             <TableCell className='tableCell'>Name</TableCell>
@@ -145,9 +158,10 @@ const rows = [
               <TableCell component="th" scope="row">
                {row.id}
               </TableCell>
+             
               <TableCell className='tableCell' align="right">{row.rollNo}</TableCell>
-              <TableCell className='tableCell' align="right">{row.name}</TableCell>
               <TableCell className='tableCell' align="right">{row.seatNo}</TableCell>
+              <TableCell className='tableCell' align="right">{row.name}</TableCell>
               <TableCell className='tableCell' align="right">{row.batch}</TableCell>
               <TableCell className='tableCell' align="right">{row.sumester}</TableCell>
               <TableCell className='tableCell' align="right">{row.field}</TableCell>

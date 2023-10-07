@@ -1,8 +1,12 @@
 import React from 'react'
+import Sidebar from '../../Components/Sidebar/Sidebar'
 
 const List = () => {
   return (
-    <div>List</div>
+    <div className='list'>
+      <Sidebar/>
+      
+    </div>
   )
 }
 

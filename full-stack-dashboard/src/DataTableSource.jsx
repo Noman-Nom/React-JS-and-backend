@@ -5,7 +5,7 @@ export const userColums = [
     {
         field: "user",
         headerName: "User",
-        width: 230,
+        width: 290,
         renderCell: (params)=>{
             return (
                 <div className="cellWithImg">
@@ -15,7 +15,10 @@ export const userColums = [
                 </div>
             )
         }
-    }
+    },
+    { field: 'email', headerName: 'Email', width:230  },
+    { field: 'UserType', headerName: 'User Type', width:130  },
+    { field: 'status', headerName: 'Status', width:100  },
 ]
 export const userData = [
     {

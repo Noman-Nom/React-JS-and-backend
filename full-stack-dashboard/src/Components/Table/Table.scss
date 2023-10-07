@@ -1,4 +1,5 @@
 .Table{
+  
     .rowWrapper{
         display: flex;
         align-items: center;
@@ -12,6 +13,18 @@
             object-fit: cover;
             
         }
+
+    }
+    .btn{
+        border-radius: 50px;
+        border: 0;
+        outline: 0;
+        padding: 10px 15px;
+        color: rgb(16, 16, 16);
+        background-color: #dfb6b2;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
 
     }
 }

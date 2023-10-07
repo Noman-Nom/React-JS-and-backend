@@ -20,22 +20,22 @@ const rows = [
     img: "/noman.jpg",
     batch: "2020",
     sumester: '7th',
-    field: 'El-CSE',
-    status: "Approved"
+    field: 'EL-CSE',
+    
 
 
 
   },
   {
+   
     id: 2,
     seatNo:"CS-20303",
-    rollNo: "20B-038-CE",
-    name:"Ayesha Usman",
+    rollNo: "20B-018-CE",
+    name:"Zainab",
     img: "/sample.jpg",
     batch: "2020",
     sumester: '7th',
-    field: 'El-CSE',
-    status: "Approved"
+    field: 'EL-CSE',
 
 
 
@@ -48,8 +48,8 @@ const rows = [
     img: "/noman.jpg",
     batch: "2020",
     sumester: '7th',
-    field: 'El-CSE',
-    status: "Pending"
+    field: 'EL-CSE',
+  
 
   },
   {
@@ -60,8 +60,8 @@ const rows = [
     img: "/noman.jpg",
     batch: "2020",
     sumester: '7th',
-    field: 'El-CSE',
-    status: "Approved"
+    field: 'EL-CSE',
+    
 
   },
   {
@@ -72,22 +72,23 @@ const rows = [
     img: "/noman.jpg",
     batch: "2020",
     sumester: '7th',
-    field: 'El-CSE',
-    status: "Approved"
+    field: 'EL-CSE',
+    
 
 
 
   },
   {
+  
     id: 6,
     seatNo:"CS-20303",
-    rollNo: "20B-018-CE",
-    name:"Zainab",
+    rollNo: "20B-038-CE",
+    name:"Ayesha Usman",
     img: "/sample.jpg",
     batch: "2020",
     sumester: '7th',
-    field: 'El-CSE',
-    status: "Pending"
+    field: 'EL-CSE',
+  
 
 
 
@@ -100,8 +101,8 @@ const rows = [
     img: "/noman.jpg",
     batch: "2020",
     sumester: '7th',
-    field: 'El-CSE',
-    status: "Approved"
+    field: 'EL-CSE',
+    
 
   },
   {
@@ -112,8 +113,8 @@ const rows = [
     img: "/noman.jpg",
     batch: "2020",
     sumester: '7th',
-    field: 'El-CSE',
-    status: "pending"
+    field: 'EL-CSE',
+  
 
   },
   {
@@ -124,8 +125,8 @@ const rows = [
     img: "/noman.jpg",
     batch: "2020",
     sumester: '7th',
-    field: 'El-CSE',
-    status: "pending"
+    field: 'EL-CSE',
+  
 
   },
 ]
@@ -138,13 +139,13 @@ const rows = [
         <TableHead>
           <TableRow>
             <TableCell className='tableCell'>ID</TableCell>
+            <TableCell className='tableCell'>Name</TableCell>
             <TableCell className='tableCell'>Roll-No</TableCell>
             <TableCell className='tableCell'>Seat-No</TableCell>
-            <TableCell className='tableCell'>Name</TableCell>
             <TableCell className='tableCell'>Batch</TableCell>
             <TableCell className='tableCell'>Sumester</TableCell>
-            <TableCell className='tableCell'>Field</TableCell>
-            <TableCell className='tableCell'>Status</TableCell>
+            <TableCell className='tableCell'>field</TableCell>
+        
             
           
           </TableRow>
@@ -156,13 +157,19 @@ const rows = [
              
             >
               <TableCell component="th" scope="row">{row.id} </TableCell>
+              <TableCell className='tableCell' align="left">
+                <div className="rowWrapper">
+                  <img src={row.img} alt="" className="iamge" />
+                  {row.name}
+                </div>
+                  </TableCell>
+              
               <TableCell className='tableCell' align="left">{row.rollNo}</TableCell>
               <TableCell className='tableCell' align="left">{row.seatNo}</TableCell>
-              <TableCell className='tableCell' align="left">{row.name}</TableCell>
               <TableCell className='tableCell' align="left">{row.batch}</TableCell>
               <TableCell className='tableCell' align="left">{row.sumester}</TableCell>
               <TableCell className='tableCell' align="left">{row.field}</TableCell>
-              <TableCell className='tableCell' align="left">{row.status}</TableCell>
+              
             </TableRow>
           ))}
         </TableBody>

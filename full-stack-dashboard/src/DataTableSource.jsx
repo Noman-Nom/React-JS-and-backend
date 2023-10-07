@@ -1,3 +1,22 @@
+
+export const userColums = [
+    { field: 'id', headerName: 'ID', width: 70 },
+
+    {
+        field: "user",
+        headerName: "User",
+        width: 230,
+        renderCell: (params)=>{
+            return (
+                <div className="cellWithImg">
+                    <img className="cellImg" src={params.row.img} alt={params.row.name} />
+                    {params.row.name}
+
+                </div>
+            )
+        }
+    }
+]
 export const userData = [
     {
         id: 1,

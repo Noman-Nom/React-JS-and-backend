@@ -12,4 +12,22 @@
             margin-right: 20px;
     }
    }
+
+   .cellWithStatus {
+    padding: 5px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-weight: 500;
+    
+    &.Active{
+     color: rgb(62, 62, 62);
+     background-color: rgba(39, 233, 152, 0.838);
+    }
+    &.InActive{
+     color: rgb(62, 62, 62);
+     background-color: rgba(247, 187, 206, 0.838);
+    }
+
+   }
+   
 }

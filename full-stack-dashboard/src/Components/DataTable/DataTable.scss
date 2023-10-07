@@ -15,18 +15,19 @@
 
    .cellWithStatus {
     padding: 5px;
-    border-radius: 20px;
-    padding: 10px 15px;
+    border-radius: 10px;
+    padding: 5px 9px;
     font-weight: 500;
     
     &.Active{
-     color: rgb(62, 62, 62);
-     background-color: rgba(39, 233, 152, 0.838);
+        color: rgb(16, 16, 16);
+        background-color: #f84b3b5b;
     }
     &.InActive{
-     color: rgb(62, 62, 62);
-     background-color: rgba(247, 187, 206, 0.838);
+        color: rgb(16, 16, 16);
+        background-color: #287b2f5b;
     }
+  
 
    }
    

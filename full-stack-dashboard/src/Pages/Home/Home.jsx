@@ -7,6 +7,7 @@ import Featured from '../../Components/Featured/Featured'
 import Chart from '../../Components/Chart/Chart'
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 import Table from '../../Components/Table/Table'
+import List from '../../Components/Table/Table'
 
 const Home = () => {
   return (
@@ -31,7 +32,7 @@ const Home = () => {
             <HowToRegIcon className='icon' />
            <h3> New Applicants For Registration</h3>
           </div>
-          <Table/>
+          <List/>
 
         </div>
       </div>

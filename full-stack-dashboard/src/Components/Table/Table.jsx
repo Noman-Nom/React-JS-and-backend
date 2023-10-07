@@ -145,6 +145,8 @@ const rows = [
             <TableCell className='tableCell'>Batch</TableCell>
             <TableCell className='tableCell'>Sumester</TableCell>
             <TableCell className='tableCell'>field</TableCell>
+            <TableCell className='tableCell'>View Detail</TableCell>
+            
         
             
           
@@ -169,6 +171,7 @@ const rows = [
               <TableCell className='tableCell' align="left">{row.batch}</TableCell>
               <TableCell className='tableCell' align="left">{row.sumester}</TableCell>
               <TableCell className='tableCell' align="left">{row.field}</TableCell>
+              <TableCell className='tableCell' align="left"><button className='btn'>View</button></TableCell>
               
             </TableRow>
           ))}

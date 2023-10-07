@@ -129,6 +129,18 @@ const rows = [
   
 
   },
+  {
+    id:9 ,
+    seatNo:"CS-20303",
+    rollNo: "20B-056-CE",
+    name:"Moiz ur Rehman",
+    img: "/noman.jpg",
+    batch: "2020",
+    sumester: '7th',
+    field: 'EL-CSE',
+  
+
+  },
 ]
 
   return (

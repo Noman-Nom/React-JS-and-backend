@@ -134,7 +134,7 @@ const rows = [
   
 
 <TableContainer className='Table' component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table >
         <TableHead>
           <TableRow>
             <TableCell className='tableCell'>ID</TableCell>
@@ -153,19 +153,16 @@ const rows = [
           {rows.map((row) => (
             <TableRow
               key={row.id}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-            >
-              <TableCell component="th" scope="row">
-               {row.id}
-              </TableCell>
              
-              <TableCell className='tableCell' align="right">{row.rollNo}</TableCell>
-              <TableCell className='tableCell' align="right">{row.seatNo}</TableCell>
-              <TableCell className='tableCell' align="right">{row.name}</TableCell>
-              <TableCell className='tableCell' align="right">{row.batch}</TableCell>
-              <TableCell className='tableCell' align="right">{row.sumester}</TableCell>
-              <TableCell className='tableCell' align="right">{row.field}</TableCell>
-              <TableCell className='tableCell' align="right">{row.status}</TableCell>
+            >
+              <TableCell component="th" scope="row">{row.id} </TableCell>
+              <TableCell className='tableCell' align="left">{row.rollNo}</TableCell>
+              <TableCell className='tableCell' align="left">{row.seatNo}</TableCell>
+              <TableCell className='tableCell' align="left">{row.name}</TableCell>
+              <TableCell className='tableCell' align="left">{row.batch}</TableCell>
+              <TableCell className='tableCell' align="left">{row.sumester}</TableCell>
+              <TableCell className='tableCell' align="left">{row.field}</TableCell>
+              <TableCell className='tableCell' align="left">{row.status}</TableCell>
             </TableRow>
           ))}
         </TableBody>

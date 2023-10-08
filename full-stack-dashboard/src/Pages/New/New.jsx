@@ -16,7 +16,39 @@ const New = () => {
             <div className="left">
                 <img src="/noimg.jpg" alt="upload image" />
             </div>
-            <div className="right">Right</div>
+            <div className="right">
+                <form>
+                  <div className="formInput">
+                    <label>User Name</label>
+                    <input type="text" placeholder='Enter Name' />
+                  </div>
+                  <div className="formInput">
+                    <label>Roll</label>
+                    <input type="text" placeholder='HOD , Engr , Stud' />
+                  </div>
+                  <div className="formInput">
+                    <label>Courses</label>
+                    <input type="text" placeholder='Enter Course' />
+                  </div>
+                  <div className="formInput">
+                    <label>Department</label>
+                    <input type="text" placeholder='CE , EE or etc' />
+                  </div>
+                  <div className="formInput">
+                    <label>User Type</label>
+                    <input type="text" placeholder='User Type' />
+                  </div>
+                  <div className="formInput">
+                    <label>Email</label>
+                    <input type="email" placeholder='Enter Email' />
+                  </div>
+                  <div className="formInput">
+                    <label>Password</label>
+                    <input type="email" placeholder='123**6**' />
+                  </div>
+                  <button>Send</button>
+                </form>
+            </div>
           </div>
         </div>
 

@@ -91,5 +91,63 @@ export const userData = [
         status: "Active"
 
     },
+    {
+        id: 4,
+        name: "Raza Muhammad ",
+        img: "/noman.jpg",
+        email: "rmuhammad@uit.edu",
+        UserType: "Dr Prof",
+        status: "Active"
+
+    },
+
+    {
+        id: 5,
+        name: "Sheraz Ahmed",
+        img: "/noman.jpg",
+        email: "noman@uit.edu",
+        UserType: "Student",
+        status: "InActive"
+
+    },
+
+    {
+        id: 6,
+        name: "Ayesha Usman",
+        img: "/sample.jpg",
+        email: "rbilal@uit.edu",
+        UserType: "Egr, Prof",
+        status: "Active"
+
+    },
+    {
+        id: 4,
+        name: "Raza Muhammad ",
+        img: "/noman.jpg",
+        email: "rmuhammad@uit.edu",
+        UserType: "Dr Prof",
+        status: "Active"
+
+    },
+
+    {
+        id: 5,
+        name: "Sheraz Ahmed",
+        img: "/noman.jpg",
+        email: "noman@uit.edu",
+        UserType: "Student",
+        status: "InActive"
+
+    },
+
+    {
+        id: 6,
+        name: "Ayesha Usman",
+        img: "/sample.jpg",
+        email: "rbilal@uit.edu",
+        UserType: "Egr, Prof",
+        status: "Active"
+
+    },
 
 ]

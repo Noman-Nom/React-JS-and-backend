@@ -12,12 +12,31 @@ const Single = () => {
         <Navbar/>
         <div className="top">
           <div className="left">
-            <div className="editBtn">Edit</div>
+            <div className="editBtn">
+              <button>Edit</button></div>
             <h1 className="title">Information</h1>
             <div className="item">
-              <img className='itemImg' src="https://images.pexels.com/photos/4145069/pexels-photo-4145069.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="img" />
+              <img className='itemImg' src="/sir.jpeg" alt="img" />
 
-              detail
+              <div className="detail">
+                <h1 className='itemTitle'>Dr M.Ghazanfar-Ullah Khan</h1>
+                <div className="detailItem">
+                  <span className="itemKey">Roll:</span>
+                  <span className="itemValue">HOD- ADMIN</span>
+                </div>
+                <div className="detailItem">
+                  <span className="itemKey">Courses:</span>
+                  <span className="itemValue">DSA & DIP </span>
+                </div>
+                <div className="detailItem">
+                  <span className="itemKey">Department:</span>
+                  <span className="itemValue">Computer Systems Engineering</span>
+                </div>
+                <div className="detailItem">
+                  <span className="itemKey">Email:</span>
+                  <span className="itemValue">mgukhan@uit.edu</span>
+                </div>
+              </div>
             </div>
           </div>
           <div className="right"></div>

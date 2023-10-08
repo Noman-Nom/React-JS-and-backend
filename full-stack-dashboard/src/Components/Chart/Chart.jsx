@@ -48,11 +48,11 @@ const data = [
   },
 ];
 
-const Chart = () => {
+const Chart = ({aspect}) => {
   return (
     <div className='Chart'>
         <div className="title">Last Month "<span>Report</span>"</div>
-           <ResponsiveContainer width="100%" aspect={2.7/1} >
+           <ResponsiveContainer width="100%" aspect={aspect}  >
            <BarChart
           width={500}
           height={300}

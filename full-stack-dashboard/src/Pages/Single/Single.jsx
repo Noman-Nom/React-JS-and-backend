@@ -2,6 +2,7 @@ import React from 'react'
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import Navbar from '../../Components/Navbar/Navbar'
 import './Single.scss'
+import Chart from '../../Components/Chart/Chart'
 
 
 const Single = () => {
@@ -39,7 +40,9 @@ const Single = () => {
               </div>
             </div>
           </div>
-          <div className="right"></div>
+          <div className="right">
+          <Chart aspect={2.7/1}/>
+          </div>
 
         </div>
 

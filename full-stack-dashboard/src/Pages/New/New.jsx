@@ -20,8 +20,8 @@ const New = () => {
             <div className="right">
                 <form>
                   <div className="formInput">
-                    <label htmlFor='file'><CloudUploadIcon/></label>
-                    <input type="file" id="file"  />
+                    <label htmlFor='file'> Image:<CloudUploadIcon className='icon'/></label>
+                    <input type="file" id="file" style={{display:"none"}}  />
                   </div>
                   <div className="formInput">
                     <label>User Name</label>

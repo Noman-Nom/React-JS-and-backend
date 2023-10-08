@@ -13,8 +13,10 @@ const New = () => {
             <h1>Add New User</h1>
           </div>
           <div className="bottom">
-            <div className="left"></div>
-            <div className="right"></div>
+            <div className="left">
+                <img src="/noimg.jpg" alt="upload image" />
+            </div>
+            <div className="right">Right</div>
           </div>
         </div>
 

@@ -2,6 +2,7 @@ import React from 'react'
 import './New.scss'
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import Navbar from '../../Components/Navbar/Navbar'
+import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
 const New = () => {
   return (
@@ -18,6 +19,10 @@ const New = () => {
             </div>
             <div className="right">
                 <form>
+                  <div className="formInput">
+                    <label htmlFor='file'><CloudUploadIcon/></label>
+                    <input type="file" id="file"  />
+                  </div>
                   <div className="formInput">
                     <label>User Name</label>
                     <input type="text" placeholder='Enter Name' />

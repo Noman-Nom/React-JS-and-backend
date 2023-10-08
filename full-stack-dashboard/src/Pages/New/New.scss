@@ -38,6 +38,7 @@
                     flex-wrap: wrap;
                     gap: 30px;
                     justify-content: space-between;
+                    align-items: center;
 
                     .formInput {
                         width: 40%;
@@ -75,7 +76,8 @@
                         cursor: pointer;
                         font-weight: bold;
                         color: white;
-                        margin-top: 10px;text-align: center;
+                        margin-top: 10px;
+                      
 
 
 

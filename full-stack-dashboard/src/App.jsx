@@ -5,6 +5,7 @@ import Login from './Pages/Login/Login'
 import List from './Pages/List/List'
 import New from './Pages/New/New'
 import Single from './Pages/Single/Single'
+import { userInputs } from './formSource'
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
             <Route path='login' element={<Login />} />
             <Route path='user'>
               <Route index element={<List />} />
-              <Route path='new' element={<New />} />
+              <Route path='new' element={<New inputs={userInputs} title="Add New User" />} />
               <Route path=':userId' element={<Single />} />
             </Route>
             <Route path='courses'>

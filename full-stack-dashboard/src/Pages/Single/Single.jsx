@@ -3,6 +3,7 @@ import Sidebar from '../../Components/Sidebar/Sidebar'
 import Navbar from '../../Components/Navbar/Navbar'
 import './Single.scss'
 import Chart from '../../Components/Chart/Chart'
+import DataTable from '../../Components/DataTable/DataTable'
 
 
 const Single = () => {
@@ -47,6 +48,9 @@ const Single = () => {
         </div>
 
         <div className="bottom">
+        <h1 className="title">Users:</h1>
+
+          <DataTable/>
 
         </div>
         

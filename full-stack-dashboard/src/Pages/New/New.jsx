@@ -9,7 +9,13 @@ const New = () => {
         <Sidebar/>
         <div className="newContainer">
           <Navbar/>
-          New
+          <div className="top">
+            <h1>Add New User</h1>
+          </div>
+          <div className="bottom">
+            <div className="left"></div>
+            <div className="right"></div>
+          </div>
         </div>
 
     </div>

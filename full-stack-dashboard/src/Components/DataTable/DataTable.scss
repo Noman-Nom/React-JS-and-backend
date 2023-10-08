@@ -30,5 +30,29 @@
   
 
    }
+
+   .cellAction{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .viewButton, .deleteButton{
+        padding: 5px;
+        border-radius: 10px;
+        padding: 5px 9px;
+        font-weight: 500;
+        border: 0;
+        cursor: pointer;
+    }
+    .viewButton{
+        color: rgb(16, 16, 16);
+        background-color: #287b2f5b;
+    }
+    .deleteButton{
+        color: rgb(16, 16, 16);
+        background-color: #f84b3b5b;
+    }
+    
+   }
    
 }

@@ -47,7 +47,7 @@
     }
     .dataTable{
         .dataGrid{
-            color: #999;
+            color: #ffffff;
             border-color: #333;
                 a{
 
@@ -127,6 +127,30 @@
         .tableCell{
             color: #ffffff;
             // font-weight: bold;
+        }
+    }
+    .Single{
+        .singleContainer{
+            .top{
+                .left{
+                  .title{
+                    color: rgb(14, 165, 233);
+                    text-transform:uppercase;
+                  }
+                    .item{
+                        .detail{
+                            .detailItem{
+                                .itemKey{
+                                    color: #ffffff;
+                                }
+                            }
+                            .itemTitle{
+                                    color: white;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

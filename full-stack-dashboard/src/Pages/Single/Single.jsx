@@ -16,7 +16,7 @@ const Single = () => {
           <div className="left">
             <div className="editBtn">
               <button>Edit</button></div>
-            <h1 className="title">Information</h1>
+            <h1 className="title">INFORMATION</h1>
             <div className="item">
               <img className='itemImg' src="/sir.jpeg" alt="img" />
 

@@ -15,9 +15,9 @@ const Featured = () => {
       <div className="bottom">
         <div className="featuredChart">
           < CircularProgressbar className='icon' value={"79"} text='78%' strokeWidth={7}  styles={buildStyles({
-            pathColor: 'rgb(108, 49, 49)',
+            pathColor: 'rgb(0, 145, 207)',
             textColor: 'black',
-            trailColor: '#d6d6d6',
+            trailColor: 'rgb(93, 135, 255)',
             
           })} />
 

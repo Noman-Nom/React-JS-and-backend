@@ -69,8 +69,8 @@ const Chart = ({aspect}) => {
           {/* <YAxis /> */}
           <Tooltip />
           <Legend />
-          <Bar dataKey="pv" fill="rgb(14 165 233)" />
-          <Bar dataKey="uv" fill="rgba(162, 162, 162, 0.534)" />
+          <Bar dataKey="pv" fill=" rgb(14 190 233)" />
+          <Bar dataKey="uv" fill="rgb(93, 135, 255)" />
         </BarChart>
       </ResponsiveContainer>
     </div>

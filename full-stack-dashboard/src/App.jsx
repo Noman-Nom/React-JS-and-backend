@@ -16,7 +16,7 @@ const App = () => {
   const {darkMode} = useContext(DarkModeContext)
   // const [dark, setDark] = useState(false)  not efficient for dark mode
   return (
-    <div className={'app'}>
+    <div className={darkMode? "app dark" : 'app'}>
       <BrowserRouter>
         <Routes>
           <Route path='/'>

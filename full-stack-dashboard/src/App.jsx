@@ -25,6 +25,11 @@ const App = () => {
               <Route path='new' element={<New />} />
               <Route path=':courseId' element={<Single />} />
             </Route>
+            <Route path='students'>
+              <Route index element={<List />} />
+              <Route path='new' element={<New />} />
+              <Route path=':studentsId' element={<Single />} />
+            </Route>
 
           </Route>
         </Routes>

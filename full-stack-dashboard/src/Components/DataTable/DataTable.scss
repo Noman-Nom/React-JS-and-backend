@@ -1,62 +1,70 @@
-.dataTable{
+.main{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 20px;
+    margin: 20px;
 
-   
-
-   .cellWithImg{
-    display: flex;
-    align-items: center;
+    .dataTable{
     
-
-    .cellImg{
-            width: 50px;
-            height: 50px;
-            object-fit: cover;
-            border-radius: 50%;
-            margin-right: 20px;
-    }
-   }
-
-   .cellWithStatus {
-    padding: 5px;
-    border-radius: 10px;
-    padding: 5px 9px;
-    font-weight: 500;
     
-    &.Active{
-        color: rgb(16, 16, 16);
-        background-color: #f84b3b5b;
-    }
-    &.InActive{
-        color: rgb(16, 16, 16);
-        background-color: #287b2f5b;
-    }
-  
-
-   }
-
-   .cellAction{
-    display: flex;
-    align-items: center;
-    gap: 16px;
-
-    .viewButton, .deleteButton{
+       
+     
+    
+       .cellWithImg{
+        display: flex;
+        align-items: center;
+        
+    
+        .cellImg{
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-right: 20px;
+        }
+       }
+    
+       .cellWithStatus {
         padding: 5px;
         border-radius: 10px;
         padding: 5px 9px;
         font-weight: 500;
-        border: 0;
-        cursor: pointer;
-    }
-    .viewButton{
-        color: rgb(16, 16, 16);
-        background-color: #287b2f5b;
-    }
-    .deleteButton{
-        color: rgb(16, 16, 16);
-        background-color: #f84b3b5b;
-    }
+        
+        &.Active{
+            color: rgb(16, 16, 16);
+            background-color: #f84b3b5b;
+        }
+        &.InActive{
+            color: rgb(16, 16, 16);
+            background-color: #287b2f5b;
+        }
+      
     
-   }
-
-   
+       }
+    
+       .cellAction{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    
+        .viewButton, .deleteButton{
+            padding: 5px;
+            border-radius: 10px;
+            padding: 5px 9px;
+            font-weight: 500;
+            border: 0;
+            cursor: pointer;
+        }
+        .viewButton{
+            color: rgb(16, 16, 16);
+            background-color: #287b2f5b;
+        }
+        .deleteButton{
+            color: rgb(16, 16, 16);
+            background-color: #f84b3b5b;
+        }
+        
+       }
+    
+       
+    }
 }

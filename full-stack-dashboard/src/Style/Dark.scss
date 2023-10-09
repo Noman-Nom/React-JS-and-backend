@@ -14,7 +14,7 @@
         }
     }
     .navbar{
-        color: #999;
+        color: #ffffff;
         border-color:#333;
 
         .search{
@@ -100,5 +100,21 @@
                 }
             }
         }
+    }
+    .widgets{
+        .left{
+            .counter{
+                color: white;
+            }
+        }
+    }
+   
+    .Featured {
+            .bottom{
+                .amount{
+                    color: white;
+                }
+
+            }
     }
 }

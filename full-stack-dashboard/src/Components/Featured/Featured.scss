@@ -7,11 +7,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        color: grey;
+        color: rgb(14 165 233);
+        
 
         .title {
-            font-size: 16px;
-            font-weight: 500;
+            font-size: 19px;
+            font-weight: 800;
         }
 
     }
@@ -38,6 +39,7 @@
         .amount{
             font-size: 20px;
              color: rgb(44, 44, 44);
+             font-weight: bold;
         }
     }
 }

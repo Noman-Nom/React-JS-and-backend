@@ -3,7 +3,8 @@
     justify-content: space-between;
     flex: 1;
     padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(14 ,190, 233,0.8) 0px 3px 6px, rgb(93, 135, 255,0.8)  0px 3px 6px;
+   
     
     border-radius: 10px;
     height: 110px;
@@ -14,9 +15,9 @@
         justify-content: space-between;
 
         .title{
-            font-size:14px ;
+            font-size:16px ;
             font-weight: bold;
-            color: rgb(152, 147, 147);
+            color: rgb(14 165 233);
             cursor: pointer;
         }
         .counter{

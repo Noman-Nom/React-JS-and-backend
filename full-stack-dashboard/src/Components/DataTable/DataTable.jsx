@@ -39,7 +39,7 @@ const DataTable = () => {
       </Link>
       </div>
     
-      <DataGrid
+      <DataGrid 
         className="dataGrid"
         rows={userData}
         columns={userColums.concat(actionColumn)}

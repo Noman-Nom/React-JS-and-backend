@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import Login from './Pages/Login/Login'
@@ -11,8 +11,10 @@ import './App.css'
 import './Style/Dark.scss'
 
 const App = () => {
+
+  const [dark, setDark] = useState(false)
   return (
-    <div className='app dark'>
+    <div className={dark? 'app dark': 'app'}>
       <BrowserRouter>
         <Routes>
           <Route path='/'>

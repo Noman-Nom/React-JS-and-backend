@@ -1,5 +1,5 @@
 .main{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(14 ,190, 233,0.8) 0px 3px 6px, rgb(93, 135, 255,0.8)  0px 3px 6px;
     padding: 20px;
     margin: 20px;
     height: 100vh;
@@ -56,12 +56,12 @@
         font-weight: 500;
         
         &.Active{
-            color: rgb(16, 16, 16);
-            background-color: #f84b3b5b;
+            color: rgb(19, 222, 107);
+            background-color: rgba(31, 206, 107, 0.158);
         }
         &.InActive{
-            color: rgb(16, 16, 16);
-            background-color: #287b2f5b;
+            color: rgb(73, 190, 255);
+            background-color: rgba(35, 165, 245, 0.158);
         }
       
     

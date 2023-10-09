@@ -147,9 +147,9 @@ const rows = [
   
 
 <TableContainer className='Table' component={Paper}>
-      <Table >
+      <Table  >
         <TableHead>
-          <TableRow>
+          <TableRow  >
             <TableCell className='tableCell'>ID</TableCell>
             <TableCell className='tableCell'>Name</TableCell>
             <TableCell className='tableCell'>Roll-No</TableCell>
@@ -170,7 +170,7 @@ const rows = [
               key={row.id}
              
             >
-              <TableCell component="th" scope="row">{row.id} </TableCell>
+              <TableCell className='tableCell'  component="th" scope="row">{row.id} </TableCell>
               <TableCell className='tableCell' align="left">
                 <div className="rowWrapper">
                   <img src={row.img} alt="" className="iamge" />

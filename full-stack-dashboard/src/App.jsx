@@ -6,10 +6,13 @@ import List from './Pages/List/List'
 import New from './Pages/New/New'
 import Single from './Pages/Single/Single'
 import { userInputs } from './formSource'
+import './App.css'
+
+import './Style/Dark.scss'
 
 const App = () => {
   return (
-    <div>
+    <div className='app dark'>
       <BrowserRouter>
         <Routes>
           <Route path='/'>

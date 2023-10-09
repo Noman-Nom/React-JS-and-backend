@@ -64,13 +64,13 @@ const Chart = ({aspect}) => {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" />
+          <CartesianGrid className='CartesianGrid ' strokeDasharray="3 3" />
           <XAxis dataKey="name"  stroke='gray'/>
           {/* <YAxis /> */}
           <Tooltip />
           <Legend />
-          <Bar dataKey="pv" fill="rgb(108, 49, 49)" />
-          <Bar dataKey="uv" fill="#525252" />
+          <Bar dataKey="pv" fill="rgb(14 165 233)" />
+          <Bar dataKey="uv" fill="rgba(162, 162, 162, 0.534)" />
         </BarChart>
       </ResponsiveContainer>
     </div>

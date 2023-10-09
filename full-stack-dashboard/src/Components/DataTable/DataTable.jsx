@@ -31,6 +31,14 @@ const DataTable = () => {
 
     
     <div className="dataTable" style={{ height: "640px", width: "100%" }}>
+
+      <div className="addNewButton">
+      <p>Add New User </p>
+      <Link to='/user/new' style={{textDecoration:'none'}}>
+     <button>Add New</button>
+      </Link>
+      </div>
+    
       <DataGrid
         className="dataGrid"
         rows={userData}

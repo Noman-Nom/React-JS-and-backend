@@ -15,7 +15,7 @@ const App = () => {
           <Route path='/'>
             <Route index element={<Home />} />
             <Route path='login' element={<Login />} />
-            <Route path='user'>
+            <Route path='user' >
               <Route index element={<List />} />
               <Route path='new' element={<New inputs={userInputs} title="Add New User" />} />
               <Route path=':userId' element={<Single />} />

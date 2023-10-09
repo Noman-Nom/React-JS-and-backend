@@ -52,17 +52,23 @@
                 a{
 
                     .viewButton{
-                        color: white;
-                        background-color: rgb(227, 124, 170);
+                        color: rgb(255, 174, 31);
+                        background-color: rgba(194, 113, 47, 0.356);
                     }
                 }
                 .deleteButton{
-                    color: white;
-                    background-color: rgb(14 165 233);
+                    background-color: rgba(228, 17, 53, 0.158);
+                    color: rgb(247, 72, 63);
                 }
                 .cellWithStatus{
-                    color: white;
-                    background-color: rgb(14 165 233);
+                    &.Active{
+                        color: rgb(19, 222, 107);
+                        background-color: rgba(31, 206, 107, 0.158);
+                    }
+                    &.InActive{
+                        color: rgb(73, 190, 255);
+                        background-color: rgba(35, 165, 245, 0.158);
+                    }
                 }
         }
 

@@ -1,10 +1,16 @@
 import React from 'react'
+import { useState } from 'react'
 import './New.scss'
 import Sidebar from '../../Components/Sidebar/Sidebar'
 import Navbar from '../../Components/Navbar/Navbar'
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 
 const New = ({inputs, title}) => {
+
+  const [file, setFile] = useState("")
+  console.log(file)
+
+  
   return (
     <div className="New">
         <Sidebar/>
@@ -21,7 +27,7 @@ const New = ({inputs, title}) => {
                 <form>
                   <div className="formInput">
                     <label htmlFor='file'> Image:<CloudUploadIcon className='icon'/></label>
-                    <input type="file" id="file" style={{display:"none"}}  />
+                    <input   onChange={e=>setFile(e.target.files[0])} type="file" id="file" style={{display:"none"}}  />
                   </div>
 
                 {

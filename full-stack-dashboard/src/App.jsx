@@ -12,9 +12,9 @@ import './Style/Dark.scss'
 
 const App = () => {
 
-  const [dark, setDark] = useState(false)
+  // const [dark, setDark] = useState(false)  not efficient for dark mode
   return (
-    <div className={dark? 'app dark': 'app'}>
+    <div className={'app'}>
       <BrowserRouter>
         <Routes>
           <Route path='/'>

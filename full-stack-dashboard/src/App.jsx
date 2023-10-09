@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import Login from './Pages/Login/Login'
@@ -9,9 +9,11 @@ import { userInputs } from './formSource'
 import './App.css'
 
 import './Style/Dark.scss'
+import { DarkModeContext } from './Context/darkModeContext'
 
 const App = () => {
 
+  const {darkMode} = useContext(DarkModeContext)
   // const [dark, setDark] = useState(false)  not efficient for dark mode
   return (
     <div className={'app'}>

@@ -34,7 +34,7 @@ const DataTable = () => {
 
       <div className="addNewButton">
       <p>Add New User </p>
-      <Link to='/user/new' style={{textDecoration:'none'}}>
+      <Link to='/user/new' style={{textDecoration:'none'}} className="btn">
      <button>Add New</button>
       </Link>
       </div>

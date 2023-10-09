@@ -21,7 +21,7 @@ const New = ({inputs, title}) => {
           </div>
           <div className="bottom">
             <div className="left">
-                <img src="/noimg.jpg" alt="upload image" />
+                <img src={file ? URL.createObjectURL(file): '/noimg.jpg'} alt="upload image" />
             </div>
             <div className="right">
                 <form>
@@ -29,6 +29,7 @@ const New = ({inputs, title}) => {
                     <label htmlFor='file'> Image:<CloudUploadIcon className='icon'/></label>
                     <input   onChange={e=>setFile(e.target.files[0])} type="file" id="file" style={{display:"none"}}  />
                   </div>
+
 
                 {
                     inputs.map((input)=>(

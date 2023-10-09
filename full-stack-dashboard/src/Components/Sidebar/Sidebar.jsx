@@ -9,6 +9,9 @@ import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import TextFieldsIcon from '@mui/icons-material/TextFields';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LockIcon from '@mui/icons-material/Lock';
+
+import { Link } from 'react-router-dom';
+
 const Sidebar = () => {
     return (
         <div className='sidebar'>
